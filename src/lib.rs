@@ -47,8 +47,7 @@ use egui_miniquad::EguiMq;
 use macroquad::prelude::*;
 use miniquad as mq;
 
-pub use egui;
-pub use macroquad;
+use macroquad;
 
 struct Egui {
     egui_mq: EguiMq,
