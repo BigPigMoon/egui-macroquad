@@ -11,10 +11,14 @@ This is the easiest way to use egui. Just two functions!
 
 # Usage
 
+> [!IMPORTANT]  
+> Add egui=0.28.0 and macroquad=0.4.0 for main project.
+
 You need to call `ui` when you need to get information from ui. Then, only after that function you must call `draw` function when you need to draw egui contents. All this functions should be called each frame and once per frame.
 
-Here is the small example on how to use this library: 
-```rust 
+Here is the small example on how to use this library:
+
+```rust
 use macroquad::prelude::*;
 
 #[macroquad::main("egui with macroquad")]
@@ -34,7 +38,7 @@ async fn main() {
         // Draw things before egui
 
         egui_macroquad::draw();
-        
+
         // Draw things after egui
 
         next_frame().await;
